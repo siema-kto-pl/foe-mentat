@@ -1,0 +1,1 @@
+chrome.devtools.panels.create("foe-mentat", null, 'panel.html');

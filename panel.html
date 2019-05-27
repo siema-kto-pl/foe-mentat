@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table, th, td {
+  border: 1px solid black;
+  text-align: center;
+}
+
+.hiddden_div {
+  display: none;
+}
+        </style>
+    </head>
+    <body>
+        <p>Current Arc bonus: <input type="number" id="arc_bonus" step="0.005"/></p>
+        <button id="pearlStatusToggle">Close GB status</button>
+        <div id="pearlStatus"></div>
+        <button id="myContributionsToggle">Close my contributions</button>
+        <div id="myContributions"></div>
+        <script src="foe-mentat.js"></script>
+        <!-- <p id="enc"></p> -->
+    </body>
+</html>
