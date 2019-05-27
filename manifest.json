@@ -1,0 +1,8 @@
+{
+    "name": "FoE Mentat",
+    "description": "An extension to Google Chrome that provides helpful analytical tool for the Forge of Empires game.",
+    "version": "1.0",
+    "manifest_version": 2,
+    "devtools_page": "devtools.html"
+    
+}
