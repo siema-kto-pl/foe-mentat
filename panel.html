@@ -1,27 +1,35 @@
 <html>
     <head>
-        <style>
-table {
-  border-collapse: collapse;
-  width: 100%;
-}
-
-table, th, td {
-  border: 1px solid black;
-  text-align: center;
-}
-
-.hiddden_div {
-  display: none;
-}
-        </style>
+      <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="css/nav.css">
     </head>
     <body>
-        <p>Current Arc bonus: <input type="number" id="arc_bonus" step="0.005"/></p>
-        <button id="pearlStatusToggle">Close GB status</button>
-        <div id="pearlStatus"></div>
-        <button id="myContributionsToggle">Close my contributions</button>
-        <div id="myContributions"></div>
+        <nav class="nav">
+            <button id="nav_btn_gbstatus" class="navlink">GB Status</button>
+            <button id="nav_btn_mycontributions" class="navlink">My contributions</button>
+            <button id="nav_btn_expedition_contrib" class="navlink">Expedition</button>
+            <button id="nav_btn_settings" class="navlink">Settings</button>
+        </nav>
+        <div id="tab_gbstatus" class="tabcontent">
+          <h3>Great Building Status</h3>
+          <div id="pearlStatus"></div>
+        </div>  
+        <div id="tab_mycontributions" class="tabcontent">
+          <h3>My contributions</h3>
+          <div id="myContributions"></div>
+        </div>
+        <div id="tab_expedition_contrib" class="tabcontent">
+          <h3>Expedition contributions</h3>
+          <div id="expedition_contrib"></div>
+        </div>  
+        <div id="tab_settings" class="tabcontent">
+          <h3>Settings</h3>
+          <p>Current Arc bonus: <input type="number" id="arc_bonus" step="0.005"/></p>
+        </div>
+
+        <!-- <button id="pearlStatusToggle">Close GB status</button>
+        <button id="myContributionsToggle">Close my contributions</button> -->
+        
         <script src="foe-mentat.js"></script>
         <!-- <p id="enc"></p> -->
     </body>
